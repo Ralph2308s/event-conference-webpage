@@ -1,151 +1,140 @@
-img {
-    width: 320px;
-    height: 240px;
-}
-
-header {
+html {
     font-family: 'Dancing Script', cursive;
-    text-align: center;
-    border: 3px solid #2E2E2E;
-    padding: 5px;
-    width: 400px;
-    margin: 0px auto;
-    box-shadow: 0px 0px 15px #434F5B;
-}
-
-header h1 {
-    color: #212A3F;
-    font-size: 45px;
-}
-
-header p {
-    color: #434F5B;
-}
-
-#topnav {
-    font-family: 'Dancing Script', cursive;
-    background-color: #434F5B;
-    font-size: 30px;
-    text-transform: lowercase;
-    width: 415px;
-    margin: 0 auto;
-}
-
-#topnav ul {
-    padding: 20px 15px;
-    margin: 0px;
-    text-align: center;
-}
-
-#topnav ul li {
-    list-style-type: none;
-    display: inline;
-}
-
-#topnav ul li a {
-    color: #F2F2F2;
-    text-decoration: none;
-    margin: 0px 5px;
-    padding: 5px;
-}
-
-#topnav ul li a:hover {
-    border-bottom: 3px solid #F2F2F2;
-    transition: 50ms linear 0s;
-    -moz-transition: 50ms linear 0s;
-    -webkit-transition: 50ms linear 0s;
 }
 
 body {
-    background-color: #F2F2F2;
+    max-width: 415px;
+    margin: auto;
 }
 
-#content {
-    font-family: 'Lora', serif;
-}
-
-#content h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #212A3F;
+header {
+    border: 2px solid #000;
+    box-shadow: 0px 0px 8px 2px #818181;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    height: 17.658rem;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
-#content p {
-    color: #2E2E2E;
+header h1 {
+    font-size: 4.5rem;
+    margin-top: 4.6rem;
+}
+
+header p {
+    font-size: 1.6rem;
+    color: #434f5b;
+}
+
+nav {
+    background-color: #434F5B;
+    margin-bottom: 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+nav li {
+    margin: 0.4rem 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    font-size: 3rem;
+    transition: all 0.1s;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content p,
+footer p {
+    font: 1.6rem Lora, serif;
+}
+
+.content p:nth-child(2),
+.content p:last-child {
     text-align: left;
-    width: 415px;
-    margin: 0px auto;
+    margin-bottom: 1.8rem;
 }
 
-#content img {
+.content p:nth-child(8) {
+    margin-bottom: 1.8rem;
+}
+
+.content img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    width: 75%;
 }
 
-#content ul {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+.content img:nth-child(3),
+.content img:nth-child(12) {
+    margin-bottom: 2rem;
 }
 
-#pic1 {
-    padding-bottom: 5px;
-}
-
-#pic2 {
-    padding-bottom: 5px;
-}
-
-#pic3 {
-    padding-bottom: 5px;
+.content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
 }
 
 footer {
-    border-top: 10px solid #434F5B;
-    width: 415px;
-    margin: 0px auto;
+    border-top: 12px solid #434f5b;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer p {
-    float: right;
-    padding-top: 5px;
-    padding-right: 0px;
-    padding-bottom: 5px;
-    padding-left: 0px;
-    margin: 0px;
-    font-family: 'Lora', serif;
+footer .fNav {
+    display: flex;
 }
 
-.footernav {
-    padding-top: 5px;
-    padding-left: 0px;
-    float: left;
+footer .fNav a {
+    font-size: 1.6rem;
+    color: #000;
+    margin-right: 0.6rem;
 }
 
-.footernav ul {
-    margin: 0px;
-    padding: 0px;
+footer .fNav a:hover {
+    opacity: 0.6;
 }
 
-.footernav ul li {
-    list-style-type: none;
-    display: inline;
+@media only screen and (max-width: 375px) {
+    header {
+        margin-top: 0;
+    }
+    .content p,
+    footer {
+        padding: 1rem;
+    }
 }
 
-.footernav ul li a:link,
-.footernav ul li a:visited {
-    color: #212A3F;
-    text-decoration: none;
-    text-transform: lowercase;
-    font-family: 'Dancing Script', cursive;
-}
-
-.footernav ul li a:hover {
-    color: #8F8F8F;
+@media only screen and (max-width: 320px) {
+    header h1 {
+        margin-top: 1rem;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+    footer .fNav {
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+    }
 }
